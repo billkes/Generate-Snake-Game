@@ -1,0 +1,45 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="100" cy="100" r="90" fill="url(#bgGradient)" stroke="#667eea" stroke-width="4"/>
+  
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    
+    <!-- 蛇身渐变 -->
+    <linearGradient id="snakeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 蛇头 -->
+  <ellipse cx="120" cy="100" rx="25" ry="20" fill="url(#snakeGradient)" stroke="#4c51bf" stroke-width="2"/>
+  
+  <!-- 蛇眼睛 -->
+  <circle cx="130" cy="95" r="4" fill="white"/>
+  <circle cx="130" cy="105" r="4" fill="white"/>
+  <circle cx="131" cy="94" r="2" fill="black"/>
+  <circle cx="131" cy="104" r="2" fill="black"/>
+  
+  <!-- 蛇身 -->
+  <ellipse cx="85" cy="100" rx="20" ry="15" fill="url(#snakeGradient)" stroke="#4c51bf" stroke-width="2"/>
+  <ellipse cx="55" cy="100" rx="18" ry="13" fill="url(#snakeGradient)" stroke="#4c51bf" stroke-width="2"/>
+  <ellipse cx="30" cy="100" rx="15" ry="11" fill="url(#snakeGradient)" stroke="#4c51bf" stroke-width="2"/>
+  
+  <!-- 食物 -->
+  <circle cx="70" cy="60" r="12" fill="#ff6b6b" stroke="#ff5252" stroke-width="2"/>
+  <circle cx="67" cy="57" r="4" fill="#ff8787"/>
+  
+  <!-- 蛇信子 -->
+  <path d="M135 100 L145 95 L145 105 L135 100" fill="#ff4757"/>
+  
+  <!-- 装饰星星 -->
+  <circle cx="40" cy="40" r="3" fill="white" opacity="0.7"/>
+  <circle cx="160" cy="50" r="2" fill="white" opacity="0.7"/>
+  <circle cx="150" cy="150" r="3" fill="white" opacity="0.7"/>
+  <circle cx="50" cy="160" r="2" fill="white" opacity="0.7"/>
+</svg>

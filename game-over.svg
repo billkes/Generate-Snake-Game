@@ -1,0 +1,27 @@
+<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <circle cx="75" cy="75" r="70" fill="#ff6b6b" stroke="#ff5252" stroke-width="4"/>
+  
+  <!-- 蛇头（悲伤表情） -->
+  <ellipse cx="75" cy="85" rx="25" ry="20" fill="#667eea" stroke="#4c51bf" stroke-width="2"/>
+  
+  <!-- 蛇眼睛（X形状表示死亡） -->
+  <line x1="65" y1="80" x2="70" y2="85" stroke="white" stroke-width="2"/>
+  <line x1="70" y1="80" x2="65" y2="85" stroke="white" stroke-width="2"/>
+  <line x1="80" y1="80" x2="85" y2="85" stroke="white" stroke-width="2"/>
+  <line x1="85" y1="80" x2="80" y2="85" stroke="white" stroke-width="2"/>
+  
+  <!-- 蛇嘴（悲伤） -->
+  <path d="M65,95 Q75,100 85,95" stroke="white" stroke-width="2" fill="none"/>
+  
+  <!-- 游戏结束文字 -->
+  <text x="75" y="50" text-anchor="middle" fill="white" font-size="16" font-weight="bold">游戏结束</text>
+  
+  <!-- 骷髅交叉骨装饰 -->
+  <g opacity="0.3">
+    <circle cx="40" cy="40" r="8" fill="white"/>
+    <circle cx="110" cy="40" r="8" fill="white"/>
+    <circle cx="40" cy="110" r="8" fill="white"/>
+    <circle cx="110" cy="110" r="8" fill="white"/>
+  </g>
+</svg>

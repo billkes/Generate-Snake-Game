@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏预览</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .preview-container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .icon-showcase {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .icon-item {
+            text-align: center;
+        }
+        .icon-item img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .icon-item p {
+            color: #666;
+            font-size: 14px;
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 30px;
+        }
+        .game-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+        .game-link:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <h1>贪吃蛇游戏 - 图标展示</h1>
+        
+        <div class="icon-showcase">
+            <div class="icon-item">
+                <img src="snake-icon.svg" alt="游戏图标">
+                <p>游戏图标</p>
+            </div>
+            
+            <div class="icon-item">
+                <img src="game-bg.svg" alt="游戏背景">
+                <p>背景图案</p>
+            </div>
+            
+            <div class="icon-item">
+                <img src="game-over.svg" alt="游戏结束">
+                <p>游戏结束</p>
+            </div>
+            
+            <div class="icon-item">
+                <img src="victory.svg" alt="胜利图标">
+                <p>胜利图标</p>
+            </div>
+        </div>
+        
+        <a href="index.html" class="game-link">开始游戏</a>
+    </div>
+</body>
+</html>
