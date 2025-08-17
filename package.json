@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "node src/stateManager.test.js",
-    "start": "python3 -m http.server 8001"
+    "start": "python3 -m http.server 8002"
   },
   "keywords": ["snake", "game", "javascript"],
   "author": "Snake Game Developer",

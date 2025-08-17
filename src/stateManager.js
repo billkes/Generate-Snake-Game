@@ -58,8 +58,8 @@ export class StateManager {
     }
 
     moveSnake() {
-        // 如果没有用户输入且方向为0，则不移动蛇
-        if (!this.hasUserInput && this.direction.x === 0 && this.direction.y === 0) {
+        // 如果游戏正在运行但还没有用户输入且方向为{0,0}，则不移动蛇
+        if (this.direction.x === 0 && this.direction.y === 0) {
             return;
         }
         
