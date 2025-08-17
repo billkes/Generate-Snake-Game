@@ -1,0 +1,14 @@
+{
+  "name": "snake-game",
+  "version": "1.0.0",
+  "description": "An improved snake game with multiple difficulty levels and obstacles",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "test": "node src/stateManager.test.js",
+    "start": "python3 -m http.server 8000"
+  },
+  "keywords": ["snake", "game", "javascript"],
+  "author": "Snake Game Developer",
+  "license": "MIT"
+}
