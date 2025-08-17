@@ -9,6 +9,7 @@ export class StateManager {
         this.snake = [
             {x: 10, y: 10}
         ];
+        // 初始时没有移动方向，等待用户输入
         this.direction = { x: 0, y: 0 };
         this.nextDirection = { x: 0, y: 0 };
         this.obstacles = [];
@@ -19,6 +20,8 @@ export class StateManager {
         this.gameSpeed = GAME_CONFIG.INITIAL_SPEED;
         this.difficulty = 'MEDIUM';
         this.lastRenderTime = 0;
+        // 标记是否已经接收过用户输入
+        this.hasUserInput = false;
     }
 
     setDifficulty(level) {
@@ -46,6 +49,8 @@ export class StateManager {
         }
         
         this.nextDirection = newDirection;
+        // 标记用户已经输入过方向
+        this.hasUserInput = true;
     }
 
     updateDirection() {
@@ -53,6 +58,11 @@ export class StateManager {
     }
 
     moveSnake() {
+        // 如果没有用户输入且方向为0，则不移动蛇
+        if (!this.hasUserInput && this.direction.x === 0 && this.direction.y === 0) {
+            return;
+        }
+        
         const head = { 
             x: this.snake[0].x + this.direction.x, 
             y: this.snake[0].y + this.direction.y 
