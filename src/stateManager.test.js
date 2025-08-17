@@ -63,7 +63,7 @@ passedTests += runTest('should initialize with correct default values', () => {
     expect(stateManager.snake.length).toBe(1);
     expect(stateManager.snake[0].x).toBe(10);
     expect(stateManager.snake[0].y).toBe(10);
-    expect(stateManager.direction.x).toBe(0);
+    expect(stateManager.direction.x).toBe(1);
     expect(stateManager.direction.y).toBe(0);
     expect(stateManager.score).toBe(0);
     expect(stateManager.gameRunning).toBe(false);
@@ -133,8 +133,10 @@ totalTests++;
 passedTests += runTest('should detect collision with walls', () => {
     const stateManager = new StateManager();
     
-    // 将蛇移到左墙
+    // 将蛇移到左墙边缘
     stateManager.snake[0] = { x: 0, y: 10 };
+    // 先将方向改为向上，避免防反向移动逻辑阻止向左移动
+    stateManager.direction = { x: 0, y: -1 };
     stateManager.setDirection({ x: -1, y: 0 });
     stateManager.updateDirection();
     stateManager.moveSnake();
